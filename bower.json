@@ -1,0 +1,8 @@
+{
+	"name": "infodeck",
+	
+	"dependencies": {
+		"deck.js": "1.1.0"
+	}
+	
+}

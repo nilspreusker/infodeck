@@ -7,9 +7,12 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		watch: {
-			all: {
-				files: ['slides/*.md'],
-				tasks: ['md2slides:all']
+			md: {
+				files: 'slides/*.md',
+				tasks: ['md2slides:all'],
+				options: {
+					livereload: true
+				}
 			}
 		},
 
@@ -21,19 +24,28 @@ module.exports = function(grunt) {
 			all: {
 				files: [{
 					src: ['slides/*.md'],
-					dest: 'output/deck.html'
+					dest: 'output/index.html'
 				}]
 			}
-		}
+		},
+
+    connect: {
+      server: {
+				options: {
+					base: 'output',
+					livereload: true
+				}
+			}
+    }
 
 	});
 
-
+  grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default', ['md2slides', 'watch']);
+	grunt.registerTask('default', ['md2slides', 'connect', 'watch']);
 
 	grunt.registerMultiTask('md2slides', 'just a test task...', function() {
-	
+
 		var output = "";
 		var marked = require("marked");
 		var mainTemplate, sectionTemplate;
@@ -55,7 +67,7 @@ module.exports = function(grunt) {
 		}
 
 		this.files.forEach(function(file) {
-			var output = file.src.filter(function(filepath) {
+			output = file.src.filter(function(filepath) {
 				// Remove non-existent files
 				if (!grunt.file.exists(filepath)) {
 					grunt.log.warn('Source file "' + filepath + '" not found.');
