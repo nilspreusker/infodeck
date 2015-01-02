@@ -1,3 +1,5 @@
 <section class="slide">
-  <%= content %>
+  <div class="slide-box">
+    <%= content %>
+  </div>
 </section>

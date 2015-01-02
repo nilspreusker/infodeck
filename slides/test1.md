@@ -10,4 +10,11 @@
 
 Bla bla
 
+<table>
+	<tr><th>this is text in a table...</th><th>this is text in a table (th)...</th></tr>
+	<tr><td>this is text in a table...</td><td>this is text in a table ...</td></tr>
+	<tr><td>this is text in a table...</td><td>this is text in a table...</td></tr>
+	<tr><td>this is text in a table...</td><td>this is text in a table...</td></tr>
+</table>
+
 And some normal text

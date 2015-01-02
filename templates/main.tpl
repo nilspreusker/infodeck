@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=1024, user-scalable=no">
     <title></title>
 
+    <link rel="stylesheet" media="screen" href="css/style.css">
+
     <!-- Required stylesheet -->
     <link rel="stylesheet" type="text/css" href="vendor/deck.js/core/deck.core.css">
 
@@ -17,7 +19,7 @@
     <link rel="stylesheet" media="screen" href="vendor/deck.js/extensions/scale/deck.scale.css">
 
     <!-- Style theme. More available in /themes/style/ or create your own. -->
-    <link rel="stylesheet" media="screen" href="vendor/deck.js/themes/style/swiss.css">
+    <!--<link rel="stylesheet" media="screen" href="vendor/deck.js/themes/style/swiss.css">-->
 
     <!-- Transition theme. More available in /themes/transition/ or create your own. -->
     <link rel="stylesheet" media="screen" href="vendor/deck.js/themes/transition/horizontal-slide.css">

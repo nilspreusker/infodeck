@@ -1,5 +1,6 @@
 node_modules
-output
+output/vendor
+output/index.html
 
 *.iml
 .idea

@@ -1,0 +1,29 @@
+.deck-container {
+    background: linear-gradient(to bottom, #efefef 0%, #f7f7f7 100%);
+}
+
+.slide-box {
+    position: relative;
+    padding: 50px;
+    margin: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.slide-box:before {
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    left: 5%;
+    content: ' ';
+    bottom: 0;
+    -webkit-border-radius: 800px / 50px;
+    border-radius: 800px / 50px;
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
