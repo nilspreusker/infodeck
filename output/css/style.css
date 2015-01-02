@@ -12,18 +12,25 @@
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.slide-box:before {
+.slide-box:before, .slide-box:after {
     position: absolute;
-    width: 90%;
+    width: 95%;
     height: 50px;
-    left: 5%;
+    left: 2.5%;
     content: ' ';
-    bottom: 0;
-    -webkit-border-radius: 800px / 50px;
+    -webkit-border-radius: 500px / 50px;
     border-radius: 800px / 50px;
     -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
     z-index: -1;
+}
+
+.slide-box:before {
+    top: 0;
+}
+
+.slide-box:after {
+    bottom: 0;
 }
 
